@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Fortunereturn from '@components/fortunreturn'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -17,9 +16,16 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
       </main>
-      <Fortunereturn/>
-
       <Footer />
     </div>
   )
+}
+  
+export const getStaticProps = async () => {
+  const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
+  const users=await res.json()
+  
+  return {
+    props:{horoscope}
+  }
 }
