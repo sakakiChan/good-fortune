@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Fortunereturn from '@components/Fortunreturn'
+import Fortunereturn from '@components/fortunreturn'
 import Footer from '@components/Footer'
 
 export default function Home() {
