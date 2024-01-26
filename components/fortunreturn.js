@@ -9,8 +9,5 @@ export default function FeedbackForm() {
             resdata += d;
         });
     })
-    .on("error",(e)=> {
-             e;
-    });
     return <p>{resdata}</p>
 }
