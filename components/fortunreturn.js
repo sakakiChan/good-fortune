@@ -1,4 +1,4 @@
-import https from 'https';
+import http from 'http';
 
 export default function FeedbackForm() {
     const url = "http://api.jugemkey.jp/api/horoscope/free/2024/01/25"
