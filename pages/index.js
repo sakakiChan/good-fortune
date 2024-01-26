@@ -17,7 +17,7 @@ export default function Home(data) {
         </p>
       </main>
       <h1>星座一覧を表示</h1>
-      <p>{data}</p>
+      <p>{getStaticProps.props}</p>
       <Footer />
     </div>
   )
