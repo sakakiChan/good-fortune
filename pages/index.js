@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import fortunereturn from '@components/fortunreturn'
+import Fortunereturn from '@components/Fortunreturn'
 import Footer from '@components/Footer'
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
       </main>
-      <fortunereturn/>
+      <Fortunereturn/>
 
       <Footer />
     </div>
