@@ -18,7 +18,6 @@ export default function Home() {
       </main>
       <h1>星座一覧を表示</h1>
       <p>{getStaticProps}</p>
-      <p>{constellations}</p>
       <Footer />
     </div>
   )
