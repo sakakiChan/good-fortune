@@ -17,7 +17,7 @@ export default function Home(data) {
         </p>
       </main>
       <h1>星座一覧を表示</h1>
-      <p>{data}</p>
+      <p>{getStaticProps}</p>
       <Footer />
     </div>
   )
@@ -26,8 +26,7 @@ export default function Home(data) {
 export const getStaticProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
   const constellations = await res.json()
-  const conste = JSON.parse(constellations)
-    return {
-    props: {conste}
+     return {
+    props: {constellations}
   }
 }
