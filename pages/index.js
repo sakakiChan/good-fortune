@@ -21,12 +21,23 @@ export default function Home() {
     </div>
   )
 }
+
+export default function constellation(data) {
+  return (
+    <div className="wrapper">
+      <h1>星座一覧を表示</h1>
+         return(
+            <p>{data.horoscope}</p>
+         )
+    </div>
+  )
+}
   
 export const getStaticProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
   const data=await res.json()
   
   return {
-    props:{data}
+    props:{constellations}
   }
 }
