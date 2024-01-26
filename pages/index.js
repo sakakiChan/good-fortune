@@ -27,6 +27,7 @@ export const getStaticProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
   const constellations = await res.json()
   
-  return 
-    {constellations}
+  return {
+      data: {constellations}
+      }
 }
