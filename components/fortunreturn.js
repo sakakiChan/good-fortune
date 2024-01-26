@@ -8,9 +8,6 @@ export default function FeedbackForm() {
         res.on("data",function(d){
             resdata += d;
         });
-        res.on('end',fanction(){
-            resdata;
-        })
     })
     .on("error",(e)=> {
              e;
