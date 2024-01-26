@@ -23,10 +23,11 @@ export default function Home(data) {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
   const constellations = await res.json()
+  const conste = JSON.parse(constellations)
     return {
-    props: {constellations}
+    props: {conste}
   }
 }
