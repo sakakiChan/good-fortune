@@ -28,6 +28,6 @@ export const getStaticProps = async () => {
   const constellations = await res.json()
   
   return {
-      data: {constellations}
-      }
+    props: {constellations}
+  }
 }
