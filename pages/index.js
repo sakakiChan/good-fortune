@@ -16,7 +16,6 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
       </main>
-      <Footer />
     </div>
   )
 }
@@ -27,5 +26,6 @@ export const getStaticProps = async () => {
   
   return {
     props:{horoscope}
+    <Footer />
   }
 }
