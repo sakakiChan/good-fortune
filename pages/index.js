@@ -24,9 +24,9 @@ export default function Home() {
   
 export const getStaticProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
-  const users=await res.json()
+  const data=await res.json()
   
   return {
-    props:{horoscope}
+    props:{data}
   }
 }
