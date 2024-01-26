@@ -2,6 +2,17 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
+export default function constellation(data) {
+  return (
+    <div className="wrapper">
+      <h1>星座一覧を表示</h1>
+         return(
+            <p>{data.horoscope}</p>
+         )
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div className="container">
@@ -18,17 +29,6 @@ export default function Home() {
       </main>
       <constellation/>
       <Footer />
-    </div>
-  )
-}
-
-export default function constellation(data) {
-  return (
-    <div className="wrapper">
-      <h1>星座一覧を表示</h1>
-         return(
-            <p>{data.horoscope}</p>
-         )
     </div>
   )
 }
