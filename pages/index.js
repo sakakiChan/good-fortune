@@ -17,13 +17,14 @@ export default function Home() {
         </p>
       </main>
       <h1>星座一覧を表示</h1>
-      <p>{conste}</p>
+      <p>{getStaticProps}</p>
+      <p>{constellations}</p>
       <Footer />
     </div>
   )
 }
   
-export const conste = async () => {
+export const getStaticProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
   const constellations = await res.json()
   
