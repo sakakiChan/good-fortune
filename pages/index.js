@@ -22,8 +22,8 @@ export default function Home(data) {
     </div>
   )
 }
-  
-export const getStaticProps = async () => {
+
+export const getServerSideProps = async () => {
   const res=await fetch("http://api.jugemkey.jp/api/horoscope/free/2024/01/25")
   const constellations = await res.json()
     return {
